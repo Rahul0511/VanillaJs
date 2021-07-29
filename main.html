@@ -23,7 +23,7 @@
         <p>Strings are written inside quotes. You can use single or double quotes:</p>
         <h3>Below is the example for string declaration</h3>
         <p id="cardetails"></p>
-        <div class="alert alert-light w-50 p-4">
+        <div class="alert alert-light w-70 p-4">
             <p class="font-weight-bold text-dark">Syntax</p>
             <code class="text-dark">#let carName1 ="BMW S Class";</code><br />
             <code class="text-dark">#let carName2 = "BMW R Class";</code><br />
@@ -40,7 +40,7 @@
 
         <p id="constructor"></p>
 
-        <div class="alert alert-light w-50 p-4">
+        <div class="alert alert-light w-70 p-4">
             <p class="font-weight-bold text-dark">Syntax</p>
             <code class="text-dark">#let name = String('John Doe');</code><br />
             <code class="text-dark">#document.getElementById("constructor").innerHTML ="Output" + name +" " + "Variable
@@ -55,96 +55,137 @@
 
         <p id="length"></P>
 
-        <div class="alert alert-light w-50 p-4 justify-center">
+        <div class="alert alert-light w-70 p-4 justify-center">
             <p class="font-weight-bold text-dark">Syntax</p>
             <code class="text-dark">#let randomname = "Gods Plans";</code><br />
-            <code
-                class="text-dark">#document.getElementById("length").innerHTML = "Size of the string is : " + randomname.length;</code>
+            <code class="text-dark">#document.getElementById("length").innerHTML = "Size of the string is : " +
+                randomname.length;</code>
 
         </div>
 
         <!--Prototype-->
         <h2>Prototype</h2>
 
-    
+
         <p>The prototype property allow you to add new properties and method to exisiting objects</p>
-       
+
         <p id="prototype1"></p>
         <p id="prototype2"></p>
         <p id="prototype3"></p>
 
-        <div class="alert alert-light w-50 p-4 justify-center">
+        <div class="alert alert-light w-70 p-4 justify-center">
             <p class="font-weight-bold text-dark">Syntax</p>
             <p class="text-dark">Properties</p>
             <code class="text-dark pb-4">#function student(name, id, course){
-            this.name = name;
-            this.id = id;
-            this.course=course;
-        }</code><br />
+                this.name = name;
+                this.id = id;
+                this.course=course;
+                }</code><br />
             <code class="text-dark pb-4">#var student1 = new student("John Doe", 007, "BSC");</code><br>
-            <code
-                class="text-dark pb-4">#document.getElementById('prototype1').innerHTML = "Function values before using prototype: " + student1.name + ", " + student1.id + ", " + student1.course;</code>
+            <code class="text-dark pb-4">#document.getElementById('prototype1').innerHTML = "Function values before
+                using prototype: " + student1.name + ", " + student1.id + ", " + student1.course;</code>
             <br>
             <code class="text-dark pb-4">#student.prototype.batch = 2021;</code><br>
-            <code
-                class="text-dark pb-4">#document.getElementById('prototype2').innerHTML = "Function values after using prototype: " + student1.name + ", " + student1.id + ", " + student1.course + ", " + student1.batch;</code>
-                <p class="text-dark pt-3">Method</p>
+            <code class="text-dark pb-4">#document.getElementById('prototype2').innerHTML = "Function values after using
+                prototype: " + student1.name + ", " + student1.id + ", " + student1.course + ", " +
+                student1.batch;</code>
+            <p class="text-dark pt-3">Method</p>
             <code class="text-dark pb-4">#Student.prototype.genratecertificate = function(){
-                let certificates = "Hello " + student1.name + " You Have Successfully Passed In " + student1.course + " For the Batch" + student1.batch;
+                let certificates = "Hello " + student1.name + " You Have Successfully Passed In " + student1.course + "
+                For the Batch" + student1.batch;
                 document.getElementById("prototype3").innerHTML = certificates;
-            }</code><br>
+                }</code><br>
             <code class="text-dark pb-4">#student1.genratecertificate();</code>
-
         </div>
-      
 
-     
-      
+        <!--String Methods -->
+        <h2>String Methods</h2>
 
-      
+        <!--CharAt()-->
+        <h4>charAt()</h4>
+        <p>return the char at specific index value, this method takes an arugument of index</p>
+        <p><strong>Note:</strong> Index value starts from 0</p>
+        <p id="charat"></p>
+
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+            <code class="text-dark">#let charstring = String("Avengers");</code><br />
+            <code class="text-dark">#document.getElementById("charat").innerHTML = "Declared String is "+ charstring+"
+                4th Charachter of the string is " + charstring.charAt(3);</code>
+        </div>
+
+        <!--charCodeAt()-->
+
+        <h4>charCodeAt()</h4>
+        <p>The charcodeat function return unicode for specific index values</p>
+        <p id="charcodeat"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+            <code class="text-dark">#let charcodestring = String("BatMan");</code><br />
+            <code class="text-dark">#document.getElementById("charcodeat").innerHTML = "Declared string is " +
+                charcodestring + " Unicode of 5th char is " + charcodestring.charCodeAt(5);</code>
+        </div>
+
+        <!--concat()-->
+
+        <h4>concat()</h4>
+        <p>Concat function joins two strings concat() does not change the exisiting string instead return new string</p>
+        <p id="concat"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let firstname = String("Joey ");</code><br />
+            <code class="text-dark">#let lastname = String("Tribbiani");</code><br />
+            <code class="text-dark">#let fullname = firstname.concat(lastname);</code><br />
+            <code class="text-dark">#document.getElementById("concat").innerHTML = "First Name " + firstname + " Last
+                Name " + lastname + " Full Name " + fullname;</code>
+        </div>
+
+
+        <!--endwith()-->
+        <h4>endWith()</h4>
+        <p>The endWith() return true if a string ends with spricified string otherwise return false.</p>
+        <p><strong>Note: </strong>endWith() is case sensitive</p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let searchstring = String("hello this is search string consist of term
+                google");</code><br />
+            <code class="text-dark">#console.log(searchstring.endsWith('google')); //this will return true </code><br />
+            <code class="text-dark">#console.log(searchstring.endsWith('Google')); //this will return false
+            </code><br />
+        </div>
+
+        <!--fromcharcode()-->
+        <h4>String.fromCharCode()</h4>
+        <p>convert a Unicode number into a character</p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#let charcode = String.fromCharCode(76); // this will console log character "L"</code><br />
+            <code class="text-dark">#console.log(charcode);</code>
+        </div>
+
+        <!--includes-->
+        <h4>includes()</h4>
+        <p>The includes() return true if an specific character is present in an string, if specified character is not
+            present it will return false.</p>
+
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#let searchquery = "The numbers in the table specify the first browser version that fully supports the method.";</code><br />
+            <code class="text-dark">#console.log(searchquery.includes('version')); //this will return true</code>
+        </div>
 
 
     </div>
 
 
-    <script>
-        //string declaration
-        let carName1 = "BMW S Class";
-        let carName2 = "BMW R Class";
-        document.getElementById("cardetails").innerHTML = "Output: " + carName1 + " " + carName2;
 
-        //primitive string declaration
-        let name = String('John Doe');
-        document.getElementById("constructor").innerHTML = "Output: " + name + " " + " Variable Type: " + name
-            .constructor;
-
-        //string length function
-        let randomname = "Gods Plans";
-        document.getElementById("length").innerHTML = "Size of the string is : " + randomname.length;
-
-        //string prototype
-
-        //properties
-        function Student(name, id, course) {
-            this.name = name;
-            this.id = id;
-            this.course = course;
-        }
-
-        var student1 = new Student("John Doe", 007, "BSC");
-        document.getElementById('prototype1').innerHTML = "Function values before using prototype: " + student1.name + ", " + student1.id + ", " + student1.course;
-        Student.prototype.batch = 2021;
-        document.getElementById('prototype2').innerHTML = "Function values after using prototype: " + student1.name + ", " + student1.id + ", " + student1.course + ", " + student1.batch;
-
-        //method
-        Student.prototype.genratecertificate = function(){
-            let certificates = "Hello " + student1.name + " You Have Successfully Passed In " + student1.course + " For the Batch" + student1.batch;
-            document.getElementById("prototype3").innerHTML = certificates;
-        }
-        student1.genratecertificate();
-
-
-    </script>
 </body>
+<script type="text/javascript" src="./script.js"> </script>
 
 </html>
