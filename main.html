@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./style.css" />
+    <title>JavaScripts Application</title>
+
+</head>
+
+<body>
+    <h1 class="pb-5 text-center">This page will show you various option which you can perform with JavaScripts</h1>
+
+
+    <div class="jumbotron bg-primary text-light">
+        <!--string declaration-->
+        <h2> JavaScript Strings Properties</h2>
+
+        <p>Strings are written inside quotes. You can use single or double quotes:</p>
+        <h3>Below is the example for string declaration</h3>
+        <p id="cardetails"></p>
+        <div class="alert alert-light w-50 p-4">
+            <p class="font-weight-bold text-dark">Syntax</p>
+            <code class="text-dark">#let carName1 ="BMW S Class";</code><br />
+            <code class="text-dark">#let carName2 = "BMW R Class";</code><br />
+            <code class="text-dark">#document.getElementById("cardetails").innerHTML = "Output: " + carName1 + " " +
+                carName2;</code>
+        </div>
+
+
+        <!--string contructor -->
+
+        <h2> String Constructor</h2>
+        <p>The String constructor is used to create a new String object. When called instead as a function,
+            it performs type conversion to a primitive string, which is usually more useful.</p>
+
+        <p id="constructor"></p>
+
+        <div class="alert alert-light w-50 p-4">
+            <p class="font-weight-bold text-dark">Syntax</p>
+            <code class="text-dark">#let name = String('John Doe');</code><br />
+            <code class="text-dark">#document.getElementById("constructor").innerHTML ="Output" + name +" " + "Variable
+                Type" + name.constructor;</code>
+
+        </div>
+
+        <!--string lenght function -->
+        <h2>String Length</h2>
+        <p>The String length function return the number of character present in the string</p>
+        <p><strong>Note:</strong> Length function will also count spaces as a character</p>
+
+        <p id="length"></P>
+
+        <div class="alert alert-light w-50 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+            <code class="text-dark">#let randomname = "Gods Plans";</code><br />
+            <code
+                class="text-dark">#document.getElementById("length").innerHTML = "Size of the string is : " + randomname.length;</code>
+
+        </div>
+
+        <!--Prototype-->
+        <h2>Prototype</h2>
+
+    
+        <p>The prototype property allow you to add new properties and method to exisiting objects</p>
+       
+        <p id="prototype1"></p>
+        <p id="prototype2"></p>
+        <p id="prototype3"></p>
+
+        <div class="alert alert-light w-50 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+            <p class="text-dark">Properties</p>
+            <code class="text-dark pb-4">#function student(name, id, course){
+            this.name = name;
+            this.id = id;
+            this.course=course;
+        }</code><br />
+            <code class="text-dark pb-4">#var student1 = new student("John Doe", 007, "BSC");</code><br>
+            <code
+                class="text-dark pb-4">#document.getElementById('prototype1').innerHTML = "Function values before using prototype: " + student1.name + ", " + student1.id + ", " + student1.course;</code>
+            <br>
+            <code class="text-dark pb-4">#student.prototype.batch = 2021;</code><br>
+            <code
+                class="text-dark pb-4">#document.getElementById('prototype2').innerHTML = "Function values after using prototype: " + student1.name + ", " + student1.id + ", " + student1.course + ", " + student1.batch;</code>
+                <p class="text-dark pt-3">Method</p>
+            <code class="text-dark pb-4">#Student.prototype.genratecertificate = function(){
+                let certificates = "Hello " + student1.name + " You Have Successfully Passed In " + student1.course + " For the Batch" + student1.batch;
+                document.getElementById("prototype3").innerHTML = certificates;
+            }</code><br>
+            <code class="text-dark pb-4">#student1.genratecertificate();</code>
+
+        </div>
+      
+
+     
+      
+
+      
+
+
+    </div>
+
+
+    <script>
+        //string declaration
+        let carName1 = "BMW S Class";
+        let carName2 = "BMW R Class";
+        document.getElementById("cardetails").innerHTML = "Output: " + carName1 + " " + carName2;
+
+        //primitive string declaration
+        let name = String('John Doe');
+        document.getElementById("constructor").innerHTML = "Output: " + name + " " + " Variable Type: " + name
+            .constructor;
+
+        //string length function
+        let randomname = "Gods Plans";
+        document.getElementById("length").innerHTML = "Size of the string is : " + randomname.length;
+
+        //string prototype
+
+        //properties
+        function Student(name, id, course) {
+            this.name = name;
+            this.id = id;
+            this.course = course;
+        }
+
+        var student1 = new Student("John Doe", 007, "BSC");
+        document.getElementById('prototype1').innerHTML = "Function values before using prototype: " + student1.name + ", " + student1.id + ", " + student1.course;
+        Student.prototype.batch = 2021;
+        document.getElementById('prototype2').innerHTML = "Function values after using prototype: " + student1.name + ", " + student1.id + ", " + student1.course + ", " + student1.batch;
+
+        //method
+        Student.prototype.genratecertificate = function(){
+            let certificates = "Hello " + student1.name + " You Have Successfully Passed In " + student1.course + " For the Batch" + student1.batch;
+            document.getElementById("prototype3").innerHTML = certificates;
+        }
+        student1.genratecertificate();
+
+
+    </script>
+</body>
+
+</html>
