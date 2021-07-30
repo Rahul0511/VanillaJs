@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+
     <h1 class="pb-5 text-center">This page will show you various option which you can perform with JavaScripts</h1>
 
 
@@ -180,11 +182,203 @@
             <code class="text-dark">#console.log(searchquery.includes('version')); //this will return true</code>
         </div>
 
+        <!--indexOf()-->
+        <h4>indexOf()</h4>
+        <p>Retrun the index Position of string which first found <br><strong>Note: </strong>If match not found
+            javascript will return as -1</p>
+
+        <p id="indexof"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let indexstring = String("Random String Random String Twice");;</code><br />
+            <code
+                class="text-dark">#document.getElementById("indexof").innerHTML = "Position of the Matched String is: " + indexstring.indexOf("String");</code>
+        </div>
+
+        <!--lastIndexOf()-->
+
+        <h4>lastIndexOf()</h4>
+        <p>Return index Position of last occurrence for a specified value in a string.</p>
+        <p id="lastindexof"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let lastindexstring = String("Random String Random String Twice");</code><br />
+            <code
+                class="text-dark">#document.getElementById("lastindexof").innerHTML = "Position of the Matched String is:" + lastindexstring.lastIndexOf("String");</code>
+        </div>
+
+        <!--localeCompare()-->
+        <h4>localeCompare()</h4>
+        <p>the localeCompare method compares two strings in the current locale</p>
+        <p><strong>Note: </strong>localeCompare() returns -1, 1, or 0 if the string comes before, after, or is equal in
+            sort order.</p>
+        <p id="localecompare"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let localstring1 = String("John");</code><br />
+            <code class="text-dark">#let localstring2 = String("Doe");</code><br />
+            <code class="text-dark">#let localstring3 = String("John");</code><br />
+            <code class="text-dark">#let localstring4 = String("doe");</code><br />
+            <code class="text-dark">#let localstring5 = String("")</code><br />
+            <code
+                class="text-dark">#document.getElementById("lastindexof").innerHTML = "Position of the Matched String is:" + lastindexstring.lastIndexOf("String");</code>
+        </div>
+
+        <!--match()-->
+
+        <h4>match()</h4>
+        <p>The match() method searches a string for a match against a regular expression, and returns the matches, as an
+            Array object.</p>
+        <p id="match"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#llet matchstring = String("I felt happy because I saw the others were happy and because I knew I should feel happy, but I wasn’t really happy");</code><br />
+            <code
+                class="text-dark">#document.getElementById("match").innerHTML = "Provided String: "+ matchstring + " " + "<br>"+ "Match in strings: "+matchstring.match(/ppy/g);</code>
+        </div>
+
+        <!--repeat()-->
+
+        <h4>repeat()</h4>
+        <p>The repeat method retuns a new string with a specified number of copies</p>
+        <p id="repeat"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let repeatstring = String("Hold The Door ");</code><br />
+            <code
+                class="text-dark">#document.getElementById("repeat").innerHTML = "Delcared String: " + repeatstring + "<br>" + "Repeated String: " + repeatstring.repeat(6);</code>
+        </div>
+
+        <!--replace-->
+        <h4>replace()</h4>
+        <p>The replace() method search specified string and replaces it with provided string where ever it has match</p>
+        <p id="replace"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let replacestring = String("John Doe")</code><br />
+            <code
+                class="text-dark">#document.getElementById("replace").innerHTML = "Declared String: " + replacestring +"<br>"+ "String after using replace(): " + replacestring.replace("Doe", "Reese");</code>
+        </div>
+
+        <!--search()-->
+        <h4>search()</h4>
+        <p>Searches a string for a specified value, or regular expression, and returns the position of the match.</p>
+        <p id="search"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#let searchstring1 = String("Sadly, in the next 18 minutes when I do our chat, four Americans that are alive will be dead from the food that they eat.");</code><br />
+            <code
+                class="text-dark">#document.getElementById("search").innerHTML= "Search String: " + searchstring1 + "<br>"+ "Search Result: " + searchstring1.search("minutes");</code>
+        </div>
+
+        <!--slice-->
+        <h4>slice()</h4>
+        <p>Extracts a part of a string and returns a new string</p>
+        <p id="slice"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let slicestring = String("Finger-Lickin Good");</code><br />
+            <code
+                class="text-dark">#document.getElementById("slice").innerHTML = "Declared String: " + slicestring + "<br>" + "String After Slice Method: " + slicestring.slice(0,13);</code>
+        </div>
+
+        <!--split-->
+
+        <h4>split()</h4>
+        <p>Splits a string into an array of substrings</p>
+        <p id="split"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let splitstring = String("Diamonds Are Forever");</code><br />
+            <code
+                class="text-dark">#document.getElementById("split").innerHTML= "Declared String: " + splitstring + "<br>" + "String after using split method: " + splitstring.split(" ");</code>
+        </div>
+
+        <!--startwith()-->
+        <h4>startwith()</h4>
+        <p>Checks wheather a string begins with specified character.</p>
+        <p id="startwith"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let startwithstring = String("Just Do It");</code><br />
+            <code
+                class="text-dark">#document.getElementById("startwith").innerHTML = "Declared String: " + startwithstring + "<br>" + "Result After Using Startwith: " + startwithstring.startsWith("J") + "," + startwithstring.startsWith("D");</code>
+        </div>
+
+        <!--substr-->
+        <h4>substr()</h4>
+        <p>Extracts the characters from a string, beginning at a specified start position, and through the specified
+            number of character</p>
+        <p id="substr"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let substr1 = String("Think Different");</code><br />
+            <code
+                class="text-dark">#document.getElementById("substr").innerHTML = "Declared String: " + substr1 + "<br>" + "String after using substr: " + substr1.substr(5,20);</code>
+        </div>
+
+
+        <!--substring-->
+        <h4>substring()</h4>
+        <p>Extracts the characters from a string, between two specified indices</p>
+        <p id="substring"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let substring2 = String("Imagination at Work");</code><br />
+            <code
+                class="text-dark">#document.getElementById("substring").innerHTML = "Declared String: " + substring2 + "<br>" + "String after Substring: " + substring2.substring(2,34);</code>
+        </div>
+
+        <!--tolocalelowercase()-->
+        <h4>toLocaleLowerCase()</h4>
+        <p>Converts a string to lowercase letters, according to the host's locale</p>
+        <p id="tolocalelower"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let localstring5 = String("Just Do It");</code><br />
+            <code
+                class="text-dark">#document.getElementById("tolocalelower").innerHTML = "Declared String: " + localstring5 + "<br>" + "String After Using localelowercase method: " + localstring5.toLocaleLowerCase();
+            </code>
+        </div>
+
+        <!--toLocaleUpperCase()-->
+        <h4>toLocaleUpperCase()</h4>
+        <p>Converts a string to uppercase letters, according to the host's locale</p>
+        <p id="tolocaleupper"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let localstring6 = String("I’m Lovin’ It");</code><br />
+            <code
+                class="text-dark">#document.getElementById("tolocaleupper").innerHTML = "Declared String: " + localstring6 + "<br>" + "String After Using localeuppercase Method: "+localstring6.toLocaleUpperCase();
+            </code>
+        </div>
+
+    
+
+
+
+
+
+
+
 
     </div>
-
-
-
 </body>
 <script type="text/javascript" src="./script.js"> </script>
 
