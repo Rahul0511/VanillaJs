@@ -9,13 +9,20 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="./style.css" />
     <title>JavaScripts Application</title>
+    <style>
+        .nav {
+            display: flex;
+        }
+    </style>
 
 </head>
 
 <body>
 
+    <nav class="navbar navbar-dark bg-dark text-light mb-4">
+        <p class="text-center">JavaScript Tutorial</p>
+    </nav>
 
-    <h1 class="pb-5 text-center">This page will show you various option which you can perform with JavaScripts</h1>
 
 
     <div class="jumbotron bg-primary text-light">
@@ -164,8 +171,8 @@
         <div class="alert alert-light w-70 p-4 justify-center">
             <p class="font-weight-bold text-dark">Syntax</p>
 
-            <code
-                class="text-dark">#let charcode = String.fromCharCode(76); // this will console log character "L"</code><br />
+            <code class="text-dark">#let charcode = String.fromCharCode(76); // this will console log character
+                "L"</code><br />
             <code class="text-dark">#console.log(charcode);</code>
         </div>
 
@@ -177,8 +184,8 @@
         <div class="alert alert-light w-70 p-4 justify-center">
             <p class="font-weight-bold text-dark">Syntax</p>
 
-            <code
-                class="text-dark">#let searchquery = "The numbers in the table specify the first browser version that fully supports the method.";</code><br />
+            <code class="text-dark">#let searchquery = "The numbers in the table specify the first browser version that
+                fully supports the method.";</code><br />
             <code class="text-dark">#console.log(searchquery.includes('version')); //this will return true</code>
         </div>
 
@@ -192,8 +199,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let indexstring = String("Random String Random String Twice");;</code><br />
-            <code
-                class="text-dark">#document.getElementById("indexof").innerHTML = "Position of the Matched String is: " + indexstring.indexOf("String");</code>
+            <code class="text-dark">#document.getElementById("indexof").innerHTML = "Position of the Matched String is:
+                " + indexstring.indexOf("String");</code>
         </div>
 
         <!--lastIndexOf()-->
@@ -205,8 +212,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let lastindexstring = String("Random String Random String Twice");</code><br />
-            <code
-                class="text-dark">#document.getElementById("lastindexof").innerHTML = "Position of the Matched String is:" + lastindexstring.lastIndexOf("String");</code>
+            <code class="text-dark">#document.getElementById("lastindexof").innerHTML = "Position of the Matched String
+                is:" + lastindexstring.lastIndexOf("String");</code>
         </div>
 
         <!--localeCompare()-->
@@ -223,8 +230,8 @@
             <code class="text-dark">#let localstring3 = String("John");</code><br />
             <code class="text-dark">#let localstring4 = String("doe");</code><br />
             <code class="text-dark">#let localstring5 = String("")</code><br />
-            <code
-                class="text-dark">#document.getElementById("lastindexof").innerHTML = "Position of the Matched String is:" + lastindexstring.lastIndexOf("String");</code>
+            <code class="text-dark">#document.getElementById("lastindexof").innerHTML = "Position of the Matched String
+                is:" + lastindexstring.lastIndexOf("String");</code>
         </div>
 
         <!--match()-->
@@ -236,10 +243,10 @@
         <div class="alert alert-light w-70 p-4 justify-center">
             <p class="font-weight-bold text-dark">Syntax</p>
 
-            <code
-                class="text-dark">#llet matchstring = String("I felt happy because I saw the others were happy and because I knew I should feel happy, but I wasn’t really happy");</code><br />
-            <code
-                class="text-dark">#document.getElementById("match").innerHTML = "Provided String: "+ matchstring + " " + "<br>"+ "Match in strings: "+matchstring.match(/ppy/g);</code>
+            <code class="text-dark">#llet matchstring = String("I felt happy because I saw the others were happy and
+                because I knew I should feel happy, but I wasn’t really happy");</code><br />
+            <code class="text-dark">#document.getElementById("match").innerHTML = "Provided String: "+ matchstring + " "
+                + "<br>"+ "Match in strings: "+matchstring.match(/ppy/g);</code>
         </div>
 
         <!--repeat()-->
@@ -251,8 +258,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let repeatstring = String("Hold The Door ");</code><br />
-            <code
-                class="text-dark">#document.getElementById("repeat").innerHTML = "Delcared String: " + repeatstring + "<br>" + "Repeated String: " + repeatstring.repeat(6);</code>
+            <code class="text-dark">#document.getElementById("repeat").innerHTML = "Delcared String: " + repeatstring +
+                "<br>" + "Repeated String: " + repeatstring.repeat(6);</code>
         </div>
 
         <!--replace-->
@@ -263,8 +270,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let replacestring = String("John Doe")</code><br />
-            <code
-                class="text-dark">#document.getElementById("replace").innerHTML = "Declared String: " + replacestring +"<br>"+ "String after using replace(): " + replacestring.replace("Doe", "Reese");</code>
+            <code class="text-dark">#document.getElementById("replace").innerHTML = "Declared String: " + replacestring
+                +"<br>"+ "String after using replace(): " + replacestring.replace("Doe", "Reese");</code>
         </div>
 
         <!--search()-->
@@ -274,10 +281,10 @@
         <div class="alert alert-light w-70 p-4 justify-center">
             <p class="font-weight-bold text-dark">Syntax</p>
 
-            <code
-                class="text-dark">#let searchstring1 = String("Sadly, in the next 18 minutes when I do our chat, four Americans that are alive will be dead from the food that they eat.");</code><br />
-            <code
-                class="text-dark">#document.getElementById("search").innerHTML= "Search String: " + searchstring1 + "<br>"+ "Search Result: " + searchstring1.search("minutes");</code>
+            <code class="text-dark">#let searchstring1 = String("Sadly, in the next 18 minutes when I do our chat, four
+                Americans that are alive will be dead from the food that they eat.");</code><br />
+            <code class="text-dark">#document.getElementById("search").innerHTML= "Search String: " + searchstring1 +
+                "<br>"+ "Search Result: " + searchstring1.search("minutes");</code>
         </div>
 
         <!--slice-->
@@ -288,8 +295,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let slicestring = String("Finger-Lickin Good");</code><br />
-            <code
-                class="text-dark">#document.getElementById("slice").innerHTML = "Declared String: " + slicestring + "<br>" + "String After Slice Method: " + slicestring.slice(0,13);</code>
+            <code class="text-dark">#document.getElementById("slice").innerHTML = "Declared String: " + slicestring +
+                "<br>" + "String After Slice Method: " + slicestring.slice(0,13);</code>
         </div>
 
         <!--split-->
@@ -301,8 +308,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let splitstring = String("Diamonds Are Forever");</code><br />
-            <code
-                class="text-dark">#document.getElementById("split").innerHTML= "Declared String: " + splitstring + "<br>" + "String after using split method: " + splitstring.split(" ");</code>
+            <code class="text-dark">#document.getElementById("split").innerHTML= "Declared String: " + splitstring +
+                "<br>" + "String after using split method: " + splitstring.split(" ");</code>
         </div>
 
         <!--startwith()-->
@@ -313,8 +320,9 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let startwithstring = String("Just Do It");</code><br />
-            <code
-                class="text-dark">#document.getElementById("startwith").innerHTML = "Declared String: " + startwithstring + "<br>" + "Result After Using Startwith: " + startwithstring.startsWith("J") + "," + startwithstring.startsWith("D");</code>
+            <code class="text-dark">#document.getElementById("startwith").innerHTML = "Declared String: " +
+                startwithstring + "<br>" + "Result After Using Startwith: " + startwithstring.startsWith("J") + "," +
+                startwithstring.startsWith("D");</code>
         </div>
 
         <!--substr-->
@@ -326,8 +334,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let substr1 = String("Think Different");</code><br />
-            <code
-                class="text-dark">#document.getElementById("substr").innerHTML = "Declared String: " + substr1 + "<br>" + "String after using substr: " + substr1.substr(5,20);</code>
+            <code class="text-dark">#document.getElementById("substr").innerHTML = "Declared String: " + substr1 +
+                "<br>" + "String after using substr: " + substr1.substr(5,20);</code>
         </div>
 
 
@@ -339,8 +347,8 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let substring2 = String("Imagination at Work");</code><br />
-            <code
-                class="text-dark">#document.getElementById("substring").innerHTML = "Declared String: " + substring2 + "<br>" + "String after Substring: " + substring2.substring(2,34);</code>
+            <code class="text-dark">#document.getElementById("substring").innerHTML = "Declared String: " + substring2 +
+                "<br>" + "String after Substring: " + substring2.substring(2,34);</code>
         </div>
 
         <!--tolocalelowercase()-->
@@ -351,8 +359,9 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let localstring5 = String("Just Do It");</code><br />
-            <code
-                class="text-dark">#document.getElementById("tolocalelower").innerHTML = "Declared String: " + localstring5 + "<br>" + "String After Using localelowercase method: " + localstring5.toLocaleLowerCase();
+            <code class="text-dark">#document.getElementById("tolocalelower").innerHTML = "Declared String: " +
+                localstring5 + "<br>" + "String After Using localelowercase method: " +
+                localstring5.toLocaleLowerCase();
             </code>
         </div>
 
@@ -364,18 +373,167 @@
             <p class="font-weight-bold text-dark">Syntax</p>
 
             <code class="text-dark">#let localstring6 = String("I’m Lovin’ It");</code><br />
-            <code
-                class="text-dark">#document.getElementById("tolocaleupper").innerHTML = "Declared String: " + localstring6 + "<br>" + "String After Using localeuppercase Method: "+localstring6.toLocaleUpperCase();
+            <code class="text-dark">#document.getElementById("tolocaleupper").innerHTML = "Declared String: " +
+                localstring6 + "<br>" + "String After Using localeuppercase Method: "+localstring6.toLocaleUpperCase();
             </code>
         </div>
 
-    
+
+    </div>
+
+    <!--Javascript strings ends here-->
+
+    <!--Javascript number starts here-->
+    <div class="jumbotron bg-danger text-light">
+        <h2>JavaScript Numbers</h2>
+        <p>JavaScript has only one type of number. Numbers can be written with, or without, decimals</p>
+
+        <!--declaring varaiables-->
+
+        <h3>Declaring Number Variable</h3>
+        <p id="numberfield"></p>
+
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#var number = 34343;</code><br />
+            <code class="text-dark">#var number2 = 67.98;</code><br />
+            <code class="text-dark">#document.getElementById("numberfield").innerHTML = "Declared Number: " + number +
+                "<br>" + "Decimal Variable: " + number2;
+            </code>
+        </div>
+
+        <!--number constructor-->
+        <h3>Number Constructor</h3>
+        <p>The constructor property return the function that created the number prototype</p>
+        <p id="numconstructor"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#let marks = 1245;</code><br />
+
+            <code class="text-dark">#document.getElementById("numconstructor").innerHTML = "Constructor Type: " +
+                marks.constructor;
+            </code>
+        </div>
+
+        <!--max_value()-->
+
+        <h3>Max_Value()</h3>
+        <p>Returns the largest number possible in JavaScript</p>
+        <p id="maxvalue"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#document.getElementById("maxvalue").innerHTML = "Max Number: " +
+                Number.MAX_VALUE;</code><br />
+        </div>
+
+        <!--min_value()-->
+
+        <h3>Min_Value()</h3>
+        <p>Returns the smallest number possible in JavaScript</p>
+        <p id="minvalue"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code class="text-dark">#document.getElementById("maxvalue").innerHTML = "Min Number: " +
+                Number.MIN_VALUE;</code><br />
+        </div>
+
+        <!--negative_infinity()-->
+
+        <h3>Nagative_Infinity()</h3>
+        <p>Represents negative infinity (returned on overflow)</p>
+        <p id="neginfi"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#document.getElementById("neginfi").innerHTML = "Nagative_Infinity: " + Number.NEGATIVE_INFINITY;</code><br />
+        </div>
+
+        <!--NaN-->
+        <h3>NaN</h3>
+        <p>Represents a Not a number value</p>
+        <p id="nan"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#document.getElementById("nan").innerHTML = "String Delcared: " + Number.NaN; </code><br />
+        </div>
+
+        <!--Positive_Infinity()-->
+
+        <h3>Positive_Infinity</h3>
+        <p>Represents infinity (returned on overflow)</p>
+        <p id="posinfi"></p>
+
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
+
+            <code
+                class="text-dark">#document.getElementById("posinfi").innerHTML = "Positive_Infinity Output: " + Number.POSITIVE_INFINITY; </code><br />
+        </div>
 
 
 
+        <!--Number Prototype-->
+        <h3>Number Prototype</h3>
+        <p>The prototype constructor allows you to add new properties and methods to JavaScript numbers.</p>
+        <p id="numberprototype1"></p>
+        <p id="numberprototype2"></p>
+        <p id="numberprototype3"></p>
 
 
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <p class="font-weight-bold text-dark">Syntax</p>
 
+            <code class="text-dark">#function bankaccount(currentaccount, savingaccount){
+                    this.currentaccount = currentaccount;
+                    this.savingaccount = savingaccount;
+                }
+                 </code><br />
+
+            <code class="text-dark">#let account1 = new bankaccount(343434,534533);
+            }
+             </code><br />
+
+            <code class="text-dark">#document.getElementById("numberprototype1").innerHTML = "Bank Account Properties Before Using Protoype Method : " + account1.savingaccount + ", " + account1.currentaccount; 
+            }
+             </code><br />
+            <code class="text-dark">#bankaccount.prototype.demataccount = 32321;</code>
+            <code
+                class="text-dark">#document.getElementById("numberprototype2").innerHTML = "Bank Account Properties Before Using Protoype Method : " + account1.currentaccount + ", " + account1.savingaccount + ", " + account1.demataccount;</code>
+            <code class="text-dark">#bankaccount.prototype.totalbal = function(){
+                sum = this.currentaccount + this.demataccount + this.currentaccount;
+                document.getElementById("numberprototype3").innerHTML = "Bank Account After Using Prototype Method: " + sum;
+            };</code>
+            <code class="text-dark">#account1.totalbal();</code>
+        </div>
+
+        <h2>JavaScript Number Methods</h2>
+
+        <!--isfinite()-->
+
+        <h3>isFinite()</h3>
+        <p>Check wheather a value is a finite number</p>
+        <p id="isfinite"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let finitenumber1 = Number(4334);</code><br>
+            <code class="text-dark">#let finitenumber2 = Number(-2.5);</code><br>
+            <code class="text-dark">#let finitenumber3 = Number(5-3);</code><br>
+            <code class="text-dark">#let finitenumber4 = Number(0);</code><br>
+            <code class="text-dark">#let finitestring = String("John");</code><br>
+            <code
+                class="text-dark">#document.getElementById("isfinite").innerHTML = "Declared Variables: " + finitenumber1 + ", " + finitenumber2 + ", "+ finitenumber3 + ", " + finitenumber4 + ", " + finitestring + "<br>" + "Output: " + Number.isFinite(finitenumber1) + ", " + Number.isFinite(finitenumber2) + ", " + Number.isFinite(finitenumber3) + ", " + Number.isFinite(finitenumber4) + ", " + Number.isFinite(finitestring) ;</code>
+        </div>
+
+        <!--isInteger()--->
+        <h3>isInteger()</h3>
+        <p>Checks whether a vlaue is an integer</p>
+        <p code="isinteger"></p>
 
 
     </div>

@@ -143,3 +143,73 @@ let localstring6 = String("I’m Lovin’ It");
 document.getElementById("tolocaleupper").innerHTML = "Declared String: " + localstring6 + "<br>" + "String After Using localeuppercase Method: "+localstring6.toLocaleUpperCase();
 
 
+// javascript numbers starts from here
+
+var number = 34343;
+var number2 = 67.98;
+document.getElementById("numberfield").innerHTML = "Declared Number: " + number + "<br>" + "Decimal Variable: " + number2;
+
+
+
+//javascript number constructor
+
+let marks = 1245;
+document.getElementById("numconstructor").innerHTML = "Constructor Type: " + marks.constructor;
+
+//max value
+
+document.getElementById("maxvalue").innerHTML = "Max Number: " + Number.MAX_VALUE;
+
+//min value
+
+document.getElementById("minvalue").innerHTML = "Min Number: " + Number.MIN_VALUE;
+
+//negative infinity
+negtivenumber = -23232;
+document.getElementById("neginfi").innerHTML = "Nagative_Infinity: " + Number.NEGATIVE_INFINITY;
+
+
+//nan
+
+document.getElementById("nan").innerHTML = "Output: " + Number.NaN; 
+
+//positive infinity
+document.getElementById("posinfi").innerHTML = "Positive_Infinity Output: " + Number.POSITIVE_INFINITY;
+
+
+//number prototype
+
+function bankaccount(currentaccount, savingaccount){
+    this.currentaccount = currentaccount;
+    this.savingaccount = savingaccount;
+}
+
+let account1 = new bankaccount(343434,534533);
+
+document.getElementById("numberprototype1").innerHTML = "Bank Account Properties Before Using Protoype Method : " + account1.savingaccount + ", " + account1.currentaccount; 
+
+bankaccount.prototype.demataccount = 32321;
+
+document.getElementById("numberprototype2").innerHTML = "Bank Account Properties Before Using Protoype Method : " + account1.currentaccount + ", " + account1.savingaccount + ", " + account1.demataccount;
+
+bankaccount.prototype.totalbal = function(){
+    sum = this.currentaccount + this.demataccount + this.currentaccount;
+    document.getElementById("numberprototype3").innerHTML = "Bank Account After Using Prototype Method: " + sum;
+};
+
+account1.totalbal();
+
+
+//number methods
+
+// infinite
+
+let finitenumber1 = Number(4334);
+let finitenumber2 = Number(-2.5);
+let finitenumber3 = Number(5-3);
+let finitenumber4 = Number(0);
+let finitestring = String("John");
+
+document.getElementById("isfinite").innerHTML = "Declared Variables: " + finitenumber1 + ", " + finitenumber2 + ", "+ finitenumber3 + ", " + finitenumber4 + ", " + finitestring + "<br>" + "Output: " + Number.isFinite(finitenumber1) + ", " + Number.isFinite(finitenumber2) + ", " + Number.isFinite(finitenumber3) + ", " + Number.isFinite(finitenumber4) + ", " + Number.isFinite(finitestring) ;
+
+//isinteger
