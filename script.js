@@ -321,3 +321,46 @@ document.getElementById("sqrt12").innerHTML = "Output: " + sqrt_val;
 
 let sqrt_val2 = Math.SQRT2;
 document.getElementById("sqrt2").innerHTML = "Output: " + sqrt_val2;
+
+
+//boolean
+var bolnum1 = Number(34);
+var bolnum2 = Number(35);
+
+document.getElementById("bol").innerHTML = "Output: " + Boolean(bolnum1 > bolnum2) + "," + Boolean(bolnum2>bolnum1);
+
+//bol contructor
+
+let boolval = false;
+
+document.getElementById("bolcon").innerHTML = "Output: " + boolval.constructor;
+
+
+//prototype
+
+Boolean.prototype.favfood = function(){
+    if(this.valueOf()==true){
+        return "Burger";
+    } else{
+        return "Pizza";
+    }
+}
+
+let bolprotoval = true;
+
+document.getElementById("bolprototype").innerHTML = "Output: " + bolprotoval.favfood();
+
+//tostring
+
+let answer = true;
+stringbol = answer.toString();
+document.getElementById("tostringval").innerHTML = "Output: " + stringbol + "<br>" + "Variable Type: " + stringbol.constructor;
+
+//valueof
+
+let bolvalueof1 = false;
+bolvalueof2 = bolvalueof1.valueOf();
+console.log(bolvalueof2);
+document.getElementById("valueoff").innerHTML = "Output: " + bolvalueof2;
+
+
