@@ -726,7 +726,7 @@
            <code class="text-dark">#let sqrt_val = Math.SQRT1_2;</code><br>
            <code class="text-dark">#document.getElementById("sqrt12").innerHTML = "Output: " + sqrt_val;</code>
        </div>
-
+        <!--SQRT2-->
        <h4>SQRT2</h4>
        <p>Returns the square root of 2 (approx. 1.414)</p>
        <p id="sqrt2"></p>
@@ -734,8 +734,77 @@
            <code class="text-dark">#let sqrt_val2 = Math.SQRT2;</code><br>
            <code class="text-dark">#document.getElementById("sqrt2").innerHTML = "Output: " + sqrt_val2;</code>
        </div>
+      </div>
+
+      <!--Boolean-->
+
+      <div class="jumbotron bg-success text-light">
+          <h2>Boolean</h2>
+          <p>JavaScript booleans can have one of two values: true or false.<br>You can use the Boolean() function to find out if an expression is true.</p>
+          <p id="bol"></p>
+
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#var bolnum1 = Number(34);              
+            </code><br>
+            <code class="text-dark">#var bolnum2 = Number(35);</code><br>
+            <code class="text-dark">#document.getElementById("bol").innerHTML = "Output: " + Boolean(bolnum1 > bolnum2) + "," + Boolean(bolnum2>bolnum1);</code>
+        </div>
+
+        <h3>Boolean Properties</h3>
+
+        <!--Contructor-->
+
+        <h4>Contructor</h4>
+        <p>Returns the function that created JavaScript's Boolean prototype</p>
+        <p id="bolcon"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">let boolval = false;              
+            </code><br>
+            <code class="text-dark">document.getElementById("bolcon").innerHTML = "Output: " + boolval.constructor;</code>
+        </div>
 
 
+        <!--Prototype-->
+        <h4>Prototype</h4>
+        <p>The prototype is a global constructor available for all JavaScript objects. <br>The prototype constructor allows you to add new properties and methods to booleans.</p>
+        <p id="bolprototype"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#Boolean.prototype.favfood = function(){
+                if(this.valueOf()==true){
+                    return "Burger";
+                } else{
+                    return "Pizza";
+                }
+            }</code><br>
+            <code class="text-dark">#let bolprotoval = true;</code><br>
+            <code class="text-dark">#document.getElementById("bolprototype").innerHTML = "Output: " + bolprotoval.favfood();</code>
+        </div>
+
+        <h3>Boolean Methods</h3>
+
+        <!--toString()-->
+        <h4>toString()</h4>
+        <p>Converts a boolean value to a string, and returns the result</p>
+        <p id="tostringval"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let answer = true;</code><br>
+            <code class="text-dark">#stringbol = answer.toString();</code><br>
+            <code class="text-dark">#document.getElementById("tostringval").innerHTML = "Output: " + stringbol + "<br>" + "Variable Type: " + stringbol.constructor;</code>
+        </div>
+
+        <!--valueof()-->
+
+        <h4>valueOf()</h4>
+        <p>The valueOf() method returns the primitive value of a boolean.</p>
+        <p id="valueoff"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let bolvalueof1 = false;</code><br>
+            <code class="text-dark">#bolvalueof2 = bolvalueof1.valueOf();</code><br>
+            <code class="text-dark">#document.getElementById("valueoff").innerHTML = "Output: " + bolvalueof2;</code>
+        </div>
+
+
+        
       </div>
 </body>
 <script type="text/javascript" src="./script.js"> </script>
