@@ -212,4 +212,71 @@ let finitestring = String("John");
 
 document.getElementById("isfinite").innerHTML = "Declared Variables: " + finitenumber1 + ", " + finitenumber2 + ", "+ finitenumber3 + ", " + finitenumber4 + ", " + finitestring + "<br>" + "Output: " + Number.isFinite(finitenumber1) + ", " + Number.isFinite(finitenumber2) + ", " + Number.isFinite(finitenumber3) + ", " + Number.isFinite(finitenumber4) + ", " + Number.isFinite(finitestring) ;
 
-//isinteger
+//isinteger()
+let intvalue1 = Number(4324);
+let intvalue2 = Number(4.6);
+let intvalue3 = Number(-4324);
+let stringval = String("Test");
+
+document.getElementById("isinteger").innerHTML = "Declared Variables: " + intvalue1 + ", " + intvalue2 + ", " + intvalue3 + ", " + stringval + "<br>" + "Output: " + Number.isInteger(intvalue1) + "," + Number.isInteger(intvalue2) + ", " + Number.isInteger(intvalue3) + ", " + Number.isInteger(stringval);
+
+//isnan()
+
+let isnannumber1 = Number(434);
+let isnannumber2 = Number(4.6);
+let isnannumber3 = Number(-4324);
+let stringval1 = String("Test");
+let nanval = NaN;
+
+
+document.getElementById("isnan").innerHTML = "Declared Variables: " + isnannumber1 + ", " + isnannumber2 + ", " + isnannumber3 + ", " + stringval1 + ", "+ nanval + "<br>" + "Output: " + Number.isNaN(isnannumber1) + "," + Number.isNaN(isnannumber2) + ", " + Number.isNaN(isnannumber3) + ", " + Number.isNaN(stringval1) + ", " + Number.isNaN(nanval); 
+
+//issafeinteger()
+
+let issafenumber1 = Number(434);
+let issafenumber2 = Number(4.6);
+let issafenumber3 = Number(-4324);
+let stringval3 = String("Test");
+let nanval1 = NaN;
+
+document.getElementById("issafeint").innerHTML = "Delcared Output: " + issafenumber1 + ", " + issafenumber2 + ", "+ isnannumber3 + ", "+ stringval3 + ", " + nanval1 + "<br>" + "Output: " + Number.isSafeInteger(issafenumber1) + ", " + Number.isSafeInteger(issafenumber2) + ", " + Number.isSafeInteger(issafenumber3) + ", " + Number.isSafeInteger(stringval3) + ", " + Number.isSafeInteger(nanval1);
+
+
+//toexpotential()
+
+let exponumber = Number(434.5);
+
+document.getElementById("toexponential").innerHTML = "Declared Variable: " + exponumber + "<br>" + "Output: " + exponumber.toExponential();
+
+
+//tofixed
+
+let decimalnum = Number(43.777);
+
+document.getElementById("tofixed").innerHTML = "Declared Variable: " + decimalnum + "<br>" + "Output: " + decimalnum.toFixed(2);
+
+
+//tostring
+
+var stringnum = new Number(3434343);
+
+document.getElementById("tolocalestring").innerHTML = "Declared Variable: " + stringnum + "<br>" + "Output: " + stringnum.toLocaleString();
+
+//toprecision
+
+var prenum = 32.4343;
+
+document.getElementById("toprecision").innerHTML = "Declared Variable: " + prenum + "<br>" + "Output: " + prenum.toPrecision(3);
+
+//tostring
+
+var numstring = 3435;
+
+document.getElementById("tostring").innerHTML = "Declared Variable: " + numstring + "<br>" + "Output: " + numstring.toString();
+
+
+//valueof
+
+var premitivenum = 34;
+
+document.getElementById("valueof").innerHTML = "Declared Variable: " + premitivenum + "<br>" + "Output: " + premitivenum.valueOf();

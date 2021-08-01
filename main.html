@@ -533,7 +533,122 @@
         <!--isInteger()--->
         <h3>isInteger()</h3>
         <p>Checks whether a vlaue is an integer</p>
-        <p code="isinteger"></p>
+        <p id="isinteger"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let intvalue1 = Number(4324);</code><br>
+            <code class="text-dark">#let intvalue2 = Number(4.6);</code><br>
+            <code class="text-dark">#let intvalue3 = Number(-4324);</code><br>
+            <code class="text-dark">#let stringval = String("Test");</code><br>
+            <code
+                class="text-dark">#document.getElementById("isinteger").innerHTML = "Declared Variables: " + intvalue1 + ", " + intvalue2 + ", " + intvalue3 + ", " + stringval + "<br>" + "Output: " + Number.isInteger(intvalue1) + "," + Number.isInteger(intvalue2) + ", " + Number.isInteger(intvalue3) + ", " + Number.isInteger(stringval);</code>
+        </div>
+
+
+        <!--isNan-->
+        <h3>isNaN</h3>
+        <p>The Number.isNaN() method determines whether a value is NaN (Not-A-Number).</p>
+        <p id="isnan"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let isnannumber1 = Number(434);</code><br>
+            <code class="text-dark">#let isnannumber2 = Number(4.6);</code><br>
+            <code class="text-dark">#let isnannumber3 = Number(-4324);</code><br>
+            <code class="text-dark">#let stringval1 = String("Test");</code><br>
+            <code class="text-dark">#let nanval = NaN;
+            </code><br>
+            <code
+                class="text-dark">#document.getElementById("isnan").innerHTML = "Declared Variables: " + isnannumber1 + ", " + isnannumber2 + ", " + isnannumber3 + ", " + stringval1 + ", "+ nanval + "<br>" + "Output: " + Number.isNaN(isnannumber1) + "," + Number.isNaN(isnannumber2) + ", " + Number.isNaN(isnannumber3) + ", " + Number.isNaN(stringval1) + ", " + Number.isNaN(nanval); </code>
+        </div>
+
+
+        <!--issafeinteger-->
+
+        <h3>isSafeInteger()</h3>
+        <p>Checks whether a value is a safe integer</p>
+        <p id="issafeint"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let issafenumber1 = Number(434);</code><br>
+            <code class="text-dark">#let issafenumber2 = Number(4.6);</code><br>
+            <code class="text-dark">#let issafenumber3 = Number(-4324);</code><br>
+            <code class="text-dark">#let stringval3 = String("Test");</code><br>
+            <code class="text-dark">#let nanval1 = NaN;
+            </code><br>
+            <code
+                class="text-dark">#document.getElementById("issafeint").innerHTML = "Delcared Output: " + issafenumber1 + ", " + issafenumber2 + ", "+ isnannumber3 + ", "+ stringval3 + ", " + nanval1 + "<br>" + "Output: " + Number.isSafeInteger(issafenumber1) + ", " + Number.isSafeInteger(issafenumber2) + ", " + Number.isSafeInteger(issafenumber3) + ", " + Number.isSafeInteger(stringval3) + ", " + Number.isSafeInteger(nanval1);</code>
+        </div>
+
+        <!--toexponential()-->
+        <h3>toExponential()</h3>
+        <p>The toExponential() method converts a number into an exponential notation.</p>
+        <p id="toexponential"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let exponumber = Number(434.5);</code><br>
+            <code class="text-dark">#document.getElementById("toexponential").innerHTML = "Declared Variable: " + exponumber + "<br>" + "Output: " + exponumber.toExponential();
+            </code>
+        </div>
+
+
+        <!--tofixed()-->
+
+        <h4>toFixed()</h4>
+        <p>The toFixed() method converts a number into a string, rounding to a specified number of decimals.</p>
+        <p id="tofixed"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#let decimalnum = Number(43.777);</code><br>
+            <code class="text-dark">#document.getElementById("tofixed").innerHTML = "Declared Variable: " + decimalnum + "<br>" + "Output: " + decimalnum.toFixed(2);
+            </code>
+        </div>
+
+
+        <!--tolocalestring-->
+        <h4>toLocaleString()</h4>
+        <p>Converts a number into a string, based on the locale settings</p>
+        <p id="tolocalestring"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#var stringnum = new Number(3434343);</code><br>
+            <code class="text-dark">#document.getElementById("tolocalestring").innerHTML = "Declared Variable: " + stringnum + "<br>" + "Output: " + stringnum.toLocaleString();
+            </code>
+        </div>
+
+        <!--toPrecision()-->
+        <h4>toPrecision()</h4>
+        <p>The toPrecision() method formats a number to a specified length. </p>
+        <p>A decimal point and nulls are added (if needed), to create the specified length.</p>
+        <p id="toprecision"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#var prenum = 32.4343;</code><br>
+            <code class="text-dark">#document.getElementById("toprecision").innerHTML = "Declared Variable: " + prenum + "<br>" + "Output: " + prenum.toPrecision(3);
+            </code>
+        </div>
+
+        <!--tostring()-->
+
+        <h4>toString()</h4>
+        <p>Convert a number to a string</p>
+        <p id="tostring"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#var numstring = 3435;</code><br>
+            <code class="text-dark">#document.getElementById("tostring").innerHTML = "Declared Variable: " + numstring + "<br>" + "Output: " + numstring.toString();
+            </code>
+        </div>
+
+        <!--valueof-->
+        <h4>valueOf()</h4>
+        <p>Returns the primitive value of a number.</p>
+        <p id="valueof"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#var premitivenum = 34;</code><br>
+            <code class="text-dark">#document.getElementById("valueof").innerHTML = "Declared Variable: " + premitivenum + "<br>" + "Output: " + premitivenum.valueOf();
+            </code>
+        </div>
+
+
+
+
+
+
+
+
+
 
 
     </div>
