@@ -280,3 +280,44 @@ document.getElementById("tostring").innerHTML = "Declared Variable: " + numstrin
 var premitivenum = 34;
 
 document.getElementById("valueof").innerHTML = "Declared Variable: " + premitivenum + "<br>" + "Output: " + premitivenum.valueOf();
+
+
+//math object starts from here
+
+var pival = Math.PI;
+var squareroot65 = Math.sqrt(65);
+document.getElementById("mathobject").innerHTML = "Output: " + pival + ", " + squareroot65;
+
+//e
+
+document.getElementById("e").innerHTML = "Output: " + Math.E;
+
+//ln2
+
+document.getElementById("ln2").innerHTML = "Output: " + Math.LN2;
+
+//ln10
+
+document.getElementById("ln10").innerHTML = "Output: " + Math.LN10;
+
+//log2e
+
+document.getElementById("log2e").innerHTML = "Output: " + Math.LOG2E;
+
+//log10e
+
+document.getElementById("log10e").innerHTML = "Output: " + Math.LOG10E;
+
+//pi
+
+document.getElementById("pi2").innerHTML = "Output: " + Math.PI;
+
+// SQRT1_2
+
+let sqrt_val = Math.SQRT1_2;
+document.getElementById("sqrt12").innerHTML = "Output: " + sqrt_val;
+
+//sqrt2
+
+let sqrt_val2 = Math.SQRT2;
+document.getElementById("sqrt2").innerHTML = "Output: " + sqrt_val2;
