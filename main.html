@@ -988,7 +988,109 @@
             <code class="text-dark">#document.getElementById("form1").innerHTML = "Output: " + myarray;</code>
         </div>
 
-        <!---->
+        <!--includes()-->
+        <h4>includes()</h4>
+        <p>Check if an array contains the specified element</p>
+        <p><strong>Note: </strong>includes() is case sensitive</p>
+        <p id="include1"></p>
+        <p id="include2"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const favfruits = ["Banana", "Orange", "Apple", "Mongo"];</code><br>
+            <code class="text-dark">#document.getElementById("include1").innerHTML = "Output: " + favfruits.includes("Mango");</code><br>
+            <code class="text-dark">#document.getElementById("include2").innerHTML = "Output: " + favfruits.includes("MANGO");</code>
+        </div>
+
+        <!--indexof()-->
+        <h4>indexOf()</h4>
+        <p>The indexOf() method searches an array for a specified item and returns its position.</p>
+        <p id="indexof1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const favfruits = ["Banana", "Orange", "Apple", "Mango"];</code><br>
+            <code class="text-dark">#document.getElementById("indexof1").innerHTML = "Output: " + favfruits.indexOf("Apple");</code><br>
+        </div>
+
+
+        <!--isArray()-->
+        <h4>isArray()</h4>
+        <p>Checks whether an object is an array</p>
+        <p id="isarray1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const favfruits = ["Banana", "Orange", "Apple", "Mango"];</code><br>
+            <code class="text-dark">#var breakfastfruit = "Banana";</code><br>
+            <code class="text-dark">#document.getElementById("isarray1").innerHTML = "Output: " + Array.isArray(favfruits) + " " + Array.isArray(breakfastfruit);
+            </code>
+        </div>
+
+        <!--join()-->
+        <h4>join()</h4>
+        <p>The join() method returns an array as a string.</p>
+        <p id="join1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const favfruits = ["Banana", "Orange", "Apple", "Mango"];</code><br>
+            <code class="text-dark">#document.getElementById("join1").innerHTML = "Output: " + favfruits.join();</code>
+        </div>
+
+
+        <!--keys()-->
+        <h4>keys()</h4>
+        <p>The keys() method returns an Array Iterator object with the keys of an array.</p>
+        <p id="keys1"></p>
+       
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const favfruits = ["Banana", "Orange", "Apple", "Mango"];</code><br>
+            <code class="text-dark">#const arraykeys = favfruits.keys();</code><br>
+            <code class="text-dark">#keyfile = "";</code><br>
+            <code class="text-dark">#for (let p of arraykeys) {
+                keyfile += p + ",";
+              }<br>";
+              }</code><br>
+            <code class="text-dark">#document.getElementById("keys1").innerHTML = "Output: " + keyfile;</code>
+        </div>
+    
+        <!--lastIndexof()-->
+        <h4>lastIndexOf()</h4>
+        <p>The lastIndexOf() method returns the last index (position) of a specified value.</p>
+        <p id="lastindexof1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const favfruit = ["Apple", "Orange", "Apple", "Mango"];</code><br>
+            <code class="text-dark">#document.getElementById("lastindexof1").innerHTML = "Output: " + favfruit.lastIndexOf("Apple");</code>
+        </div>
+
+        <!--map()-->
+
+        <h4>map()</h4>
+        <p>The map() method creates a new array with the results of calling a function for every array element.</p>
+        <p id="map1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const randomarray = [4, 5, 6, 15, 25];</code><br>
+            <code class="text-dark">#const newarray = randomarray.map(Math.sqrt);</code><br>
+            <code class="text-dark">#document.getElementById("map1").innerHTML = "Output: " + newarray;</code>
+        </div>
+
+        <!--pop()-->
+        <h4>pop()</h4>
+        <p>The pop() method removes the last element of an array.</p>
+        <p id="pop1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#const randomarray = [4, 5, 6, 15, 25];</code><br>
+            <code class="text-dark">#document.getElementById("pop1").innerHTML = "Array Before POP(): " + randomarray  +"POPED Value: " + randomarray.pop() + "Array After POP(): " + randomarray;</code>
+        </div>
+
+        <!--push()-->
+        <h4>push()</h4>
+        <p>The push() method adds new items to the end of an array.</p>
+        <p id="push1"></p>
+        <div class="alert alert-light w-70 p-4 justify-center">
+            <code class="text-dark">#document.getElementById("push1").innerHTML = "Array Before Push:" + randomarray + ", " + "Pushed Value In Array: 34 " + "," + "Value Pushed On Index: " + randomarray.push(34) + ", " + "Array After Pushed Value: " + randomarray;</code>
+
+        </div>
+        
+
+
+    
+
+
+
 
 
     </div>
