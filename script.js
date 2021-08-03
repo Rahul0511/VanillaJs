@@ -674,3 +674,60 @@ function fruitFunction(item,index) {
 
 const myarray = Array.from("ABCDEFG");
 document.getElementById("form1").innerHTML = "Output: " + myarray;
+
+
+//includes()
+
+const favfruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("include1").innerHTML = "Output: " + favfruits.includes("Mango");
+document.getElementById("include2").innerHTML = "Output: " + favfruits.includes("MANGO");
+
+
+//indexpf()
+
+document.getElementById("indexof1").innerHTML = "Output: " + favfruits.indexOf("Apple");
+
+
+//isarray()
+
+var breakfastfruit = "Banana";
+document.getElementById("isarray1").innerHTML = "Output: " + Array.isArray(favfruits) + " " + Array.isArray(breakfastfruit);
+
+
+//join()
+
+document.getElementById("join1").innerHTML = "Output: " + favfruits.join();
+
+
+//keys()
+
+const arraykeys = favfruits.keys();
+keyfile = "";
+
+for (let p of arraykeys) {
+  keyfile += p + "<br>";
+}
+document.getElementById("keys1").innerHTML = "Output: " + keyfile;
+
+
+//lastIndexOf()
+
+const favfruit = ["Apple", "Orange", "Apple", "Mango"];
+
+document.getElementById("lastindexof1").innerHTML = "Output: " + favfruit.lastIndexOf("Apple");
+
+//map()
+
+const randomarray = [4, 5, 6, 15, 25];
+const newarray = randomarray.map(Math.sqrt);
+
+document.getElementById("map1").innerHTML = "Output: " + newarray;
+
+//pop()
+
+document.getElementById("pop1").innerHTML = "Array Before POP(): " + randomarray + "<br>" +"POPED Value: " + randomarray.pop() + "<br>" +"Array After POP(): " + randomarray;
+
+
+//push()
+
+document.getElementById("push1").innerHTML = "Array Before Push:" + randomarray + ", " + "Pushed Value In Array: 34 " + "," + "Value Pushed On Index: " + randomarray.push(34) + ", " + "Array After Pushed Value: " + randomarray;
